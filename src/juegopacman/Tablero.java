@@ -292,13 +292,13 @@ public class Tablero {
      * 
      */
     private void pacmanAtrapado() {
-        System.out.println("Pacman fue atrapado");
+        System.out.println("Has sido atrapado");
         setPacmanAtrapadoHilo(true);
 
         pacman.setVidasRestantes(pacman.getVidasRestantes() - 1);
 
         if (pacman.getVidasRestantes() == 0) {
-            System.out.println(" GAAAAAME OVEEEEEEEEEEEEER ");
+            System.out.println(" ELIMINADO ");
         } else {
             System.out.println("\nReset del mapa");
 
@@ -388,11 +388,11 @@ public class Tablero {
     private void esperarAntesDeContinuar() {
     try {
         Thread.sleep(2000);
-        System.out.println("The game starts in :  3 \n");
+        System.out.println("El juego comienza en:  3 \n");
         Thread.sleep(1000);
-        System.out.println("The game starts in :  2 \n");
+        System.out.println("El juego comienza en:  2 \n");
         Thread.sleep(1000);
-        System.out.println("The game starts in :  1 \n");
+        System.out.println("El juego comienza en:  1 \n");
         Thread.sleep(1000);
         System.out.println("START\n\n\n");
         Thread.sleep(1000);

@@ -22,11 +22,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("""
-                           Bienvenido al clásico juego del Pacman
+                           Bienvenido al clasico juego del Pacman, pero esta vez en Java
                            
-                           Elige la dificultad pulsando un número
+                           Elige la dificultad pulsando un numero
                            
-                           1. Fácil   2. Medio   3. Difícil  4. Hardcore
+                           1. Facil   2. Medio   3. Dificil  4. Extremo
                            
                            """);
 
@@ -54,7 +54,7 @@ public class Main {
         Direccion pedirDireccion = new Direccion(tablero);
 
         try {
-            System.out.println("The game starts in : 3");
+            System.out.println("El juego comienza en: 3");
             System.out.println("");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -62,7 +62,7 @@ public class Main {
         }
 
         try {
-            System.out.println("The game starts in : 2");
+            System.out.println("El juego comienza en: 2");
             System.out.println("");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -70,7 +70,7 @@ public class Main {
         }
 
         try {
-            System.out.println("The game starts in : 1");
+            System.out.println("El juego comienza en: 1");
             System.out.println("");
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -147,11 +147,11 @@ public class Main {
         };
 
         if (tablero.getTiempo() == 0) {
-            System.out.println("PERDISTE 😭 , EL TIEMPO LLEGO A 0");
+            System.out.println("HAS PERDIDO , EL TIEMPO LLEGO A 0");
         } else if (pacman.getVidasRestantes() == 0) {
-            System.out.println("PERDISTE 😭 , TE QUEDASTE SIN VIDAS");
+            System.out.println("QUE MALO ERES , TE QUEDASTE SIN VIDAS");
         } else {
-            System.out.println("Felicidades, has superado la modalidad " + dificultadPalabra);
+            System.out.println("Felicidades, te has pasado la dificultad " + dificultadPalabra);
             System.out.println("\nGanaste con un total de "+tablero.getPuntuacion() +" puntos.");
         }
 
